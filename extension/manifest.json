@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Roll20 Popout Map",
+    "version": "0.1",
+  
+    "description": "Allows you to popout the roll20 canvas to a separate window",
+  
+    "content_scripts": [
+        {
+            "matches": ["*://app.roll20.net/editor/*"],
+            "js": ["popoutmap.js"]
+        }
+    ]
+}
